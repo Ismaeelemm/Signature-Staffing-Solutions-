@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms & Travel Rates | Signature Staffing Solutions</title>
+<meta name="description" content="Booking terms, deposit policy and regional travel fee guide for Signature Staffing Solutions, Cape Town.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caveat:wght@500;700&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink: #0B0B0D;
+    --surface: #17171A;
+    --surface-2: #1F1F23;
+    --line: #2C2C31;
+    --paper: #F2F0EC;
+    --paper-dim: #B9B7B2;
+    --crimson: #C81E3A;
+    --crimson-bright: #E23A56;
+    --brass: #C9A227;
+    --brass-bright: #E4C15A;
+    --radius: 4px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--ink);
+    color:var(--paper);
+    font-family:'Inter',sans-serif;
+    line-height:1.5;
+    overflow-x:hidden;
+  }
+  h1,h2,h3{font-family:'Archivo Black',sans-serif;text-transform:uppercase;letter-spacing:-0.01em;line-height:1.05;}
+  .sig-font{font-family:'Caveat',cursive;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
+  .eyebrow{
+    font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:var(--paper-dim);
+    font-weight:700;display:flex;align-items:center;gap:10px;margin-bottom:14px;
+  }
+  .eyebrow::before{content:"";width:26px;height:1px;background:var(--paper-dim);display:inline-block;}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    padding:14px 26px;border-radius:2px;font-weight:700;font-size:14px;
+    letter-spacing:0.03em;text-transform:uppercase;border:1px solid transparent;
+    cursor:pointer;transition:transform .15s ease, background .2s ease, border-color .2s ease;
+  }
+  .btn-primary{background:var(--crimson);color:#fff;}
+  .btn-primary:hover{background:var(--crimson-bright);transform:translateY(-2px);}
+  .btn-ghost{border-color:var(--line);color:var(--paper);}
+  .btn-ghost:hover{border-color:var(--paper);transform:translateY(-2px);}
+  :focus-visible{outline:2px solid var(--brass-bright);outline-offset:3px;}
+
+  /* NAV */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:50;
+    background:rgba(11,11,13,0.85);backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  nav{display:flex;align-items:center;justify-content:space-between;padding:12px 24px;max-width:1180px;margin:0 auto;}
+  .brand{display:flex;align-items:center;}
+  .brand-mark{width:130px;height:auto;flex-shrink:0;color:var(--paper);}
+  @media(max-width:420px){
+    .brand-mark{width:88px;}
+  }
+  .nav-links{display:flex;gap:34px;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;}
+  .nav-links a{opacity:0.75;transition:opacity .2s;}
+  .nav-links a:hover{opacity:1;color:var(--brass-bright);}
+  .nav-cta{display:none;}
+  .menu-btn{display:flex;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px;}
+  .menu-btn span{width:22px;height:2px;background:var(--paper);display:block;}
+  @media(min-width:860px){
+    .nav-links{display:flex;}
+    .nav-cta{display:inline-flex;}
+    .menu-btn{display:none;}
+  }
+  @media(max-width:859px){.nav-links{display:none;}}
+  .mobile-menu{
+    display:none;flex-direction:column;gap:0;background:var(--surface);
+    border-top:1px solid var(--line);
+  }
+  .mobile-menu.open{display:flex;}
+  .mobile-menu a{padding:16px 24px;border-bottom:1px solid var(--line);font-weight:600;text-transform:uppercase;font-size:13px;letter-spacing:0.06em;}
+
+  /* COMPANY NAME BAND — subtle identifier between nav and hero */
+  .company-band{padding:96px 0 46px;text-align:center;}
+  .company-band .inner{display:flex;flex-direction:column;align-items:center;}
+  .company-band-name{
+    font-family:'Inter',sans-serif;font-weight:600;text-transform:uppercase;
+    letter-spacing:0.32em;font-size:12px;color:var(--paper-dim);
+  }
+  @media(max-width:480px){
+    .company-band{padding:72px 0 32px;}
+    .company-band-name{font-size:10.5px;letter-spacing:0.22em;}
+  }
+
+  /* HERO */
+  .hero{
+    padding:20px 0 90px;position:relative;
+    background:
+      radial-gradient(ellipse 900px 500px at 85% -10%, rgba(200,30,58,0.18), transparent 60%),
+      radial-gradient(ellipse 700px 400px at 0% 100%, rgba(201,162,39,0.10), transparent 60%);
+  }
+  .hero-inner{max-width:760px;}
+  .hero .eyebrow{margin-bottom:16px;}
+  .hero h1{
+    font-size:clamp(28px,4.8vw,50px);margin-bottom:18px;text-transform:none;
+    font-family:'Inter',sans-serif;font-weight:700;color:var(--paper);letter-spacing:-0.01em;line-height:1.15;
+  }
+  .hero h1 .accent{color:var(--crimson-bright);}
+  .hero-tags{
+    font-size:12.5px;color:var(--paper-dim);text-transform:uppercase;letter-spacing:0.08em;
+    font-weight:600;margin-bottom:28px;
+  }
+  .hero-punch{
+    font-family:'Inter',sans-serif;font-weight:600;font-size:15px;line-height:1.5;
+    color:var(--paper-dim);margin-bottom:32px;
+  }
+  .hero-ctas{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:0;}
+  .hero-ctas .btn-primary{padding:16px 32px;box-shadow:0 10px 28px rgba(200,30,58,0.32);}
+  .hero-stats{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:20px 0;margin-top:44px;
+    border-top:1px solid var(--line);padding-top:22px;max-width:680px;
+  }
+  .hero-stats div{padding-right:20px;}
+  .hero-stats b{display:block;font-family:'Archivo Black',sans-serif;font-size:26px;color:var(--paper);}
+  .hero-stats span{font-size:12px;color:var(--paper-dim);text-transform:uppercase;letter-spacing:0.05em;}
+  @media(max-width:560px){
+    .hero-stats{grid-template-columns:repeat(2,1fr) !important;margin-top:32px;gap:16px 0;padding-top:18px;}
+    .hero-stats b{font-size:22px;}
+  }
+
+  section{padding:100px 0;border-top:1px solid var(--line);}
+  .section-head{max-width:640px;margin-bottom:56px;}
+  .section-head h2{font-size:clamp(28px,4vw,42px);}
+  .section-head p{color:var(--paper-dim);margin-top:14px;font-size:16px;}
+
+  /* SERVICES */
+  .services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
+  .service-card{background:var(--surface);padding:34px 30px;display:flex;gap:20px;}
+  .service-card .num{font-family:'Archivo Black',sans-serif;font-size:13px;color:var(--paper-dim);flex-shrink:0;padding-top:3px;}
+  .service-card h3{font-size:16px;text-transform:none;margin-bottom:8px;font-family:'Inter',sans-serif;font-weight:800;letter-spacing:0.01em;}
+  .service-card p{font-size:14px;color:var(--paper-dim);}
+  @media(max-width:700px){.services-grid{grid-template-columns:1fr;}}
+
+  /* PROCESS */
+  .process{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:36px;}
+  .process-step{position:relative;padding-top:18px;border-top:2px solid var(--line);}
+  .process-step .num{font-family:'Archivo Black',sans-serif;font-size:14px;color:var(--paper-dim);display:block;margin-bottom:14px;}
+  .process-step h3{font-size:17px;text-transform:none;font-family:'Inter',sans-serif;font-weight:800;margin-bottom:8px;}
+  .process-step p{font-size:14px;color:var(--paper-dim);}
+
+  /* CALCULATOR */
+  .calc-box{
+    background:var(--surface);border:1px solid var(--line);padding:44px;display:grid;grid-template-columns:1fr 1fr;gap:44px;
+  }
+  @media(max-width:760px){.calc-box{grid-template-columns:1fr;padding:28px;}}
+  .field{margin-bottom:22px;}
+  .field label{display:block;font-size:12px;text-transform:uppercase;letter-spacing:0.06em;color:var(--paper-dim);margin-bottom:8px;font-weight:600;}
+  .field input, .field select{
+    width:100%;background:var(--ink);border:1px solid var(--line);color:var(--paper);
+    padding:14px 16px;font-size:16px;border-radius:2px;font-family:inherit;
+  }
+  .field input:focus, .field select:focus{border-color:var(--brass-bright);}
+  .toggle-row{
+    display:flex;align-items:center;justify-content:space-between;gap:16px;
+    padding:14px 0;border-top:1px solid var(--line);
+  }
+  .toggle-row label{font-size:14px;font-weight:600;color:var(--paper);}
+  .toggle-row .sub{display:block;font-size:12px;font-weight:400;color:var(--paper-dim);margin-top:2px;}
+  .switch{position:relative;width:46px;height:26px;flex-shrink:0;}
+  .switch input{position:absolute;opacity:0;width:100%;height:100%;margin:0;cursor:pointer;z-index:1;}
+  .switch .track{position:absolute;inset:0;background:var(--line);border-radius:20px;transition:background .2s;}
+  .switch .thumb{position:absolute;top:3px;left:3px;width:20px;height:20px;background:var(--paper);border-radius:50%;transition:transform .2s;}
+  .switch input:checked ~ .track{background:var(--crimson);}
+  .switch input:checked ~ .thumb{transform:translateX(20px);}
+  .switch input:focus-visible ~ .track{outline:2px solid var(--brass-bright);outline-offset:2px;}
+  .calc-result{background:var(--ink);border:1px solid var(--line);padding:28px;}
+  .calc-result .label{font-size:12px;text-transform:uppercase;color:var(--paper-dim);letter-spacing:0.06em;margin-bottom:18px;}
+  .calc-row{display:flex;justify-content:space-between;align-items:baseline;padding:12px 0;border-bottom:1px solid var(--line);}
+  .calc-row:last-child{border-bottom:none;}
+  .calc-row .role{font-size:14px;color:var(--paper-dim);}
+  .calc-row .count{font-family:'Archivo Black',sans-serif;font-size:24px;color:var(--paper);}
+
+  /* PACKAGES */
+  .packages{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;}
+  .pkg{background:var(--surface);border:1px solid var(--line);padding:36px 30px;display:flex;flex-direction:column;}
+  .pkg.featured{background:linear-gradient(165deg,var(--surface-2),var(--surface));border-color:var(--brass);position:relative;transform:translateY(-8px);}
+  .pkg.featured::before{
+    content:"MOST BOOKED";position:absolute;top:-1px;right:-1px;background:var(--brass);color:var(--ink);
+    font-size:10px;font-weight:800;letter-spacing:0.08em;padding:6px 12px;
+  }
+  .pkg h3{font-size:20px;text-transform:none;font-family:'Archivo Black',sans-serif;margin-bottom:6px;}
+  .pkg .tag{font-size:13px;color:var(--paper-dim);margin-bottom:22px;}
+  .pkg ul{list-style:none;margin-bottom:28px;flex-grow:1;}
+  .pkg li{font-size:14px;color:var(--paper-dim);padding:9px 0;border-top:1px solid var(--line);display:flex;gap:10px;}
+  .pkg li::before{content:"—";color:var(--crimson-bright);flex-shrink:0;}
+  .pkg .price{font-family:'Archivo Black',sans-serif;font-size:26px;color:var(--paper);margin-bottom:4px;}
+
+  .addons{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-top:24px;}
+  .addon-card{background:var(--surface);border:1px dashed var(--line);padding:26px;}
+  .addon-card .eyebrow{margin-bottom:10px;}
+  .addon-card h3{font-size:17px;text-transform:none;font-family:'Inter',sans-serif;font-weight:800;margin-bottom:4px;}
+  .addon-card .price{font-size:14px;color:var(--paper);font-weight:700;margin-bottom:14px;}
+  .addon-card ul{list-style:none;}
+  .addon-card li{font-size:13px;color:var(--paper-dim);padding:6px 0;display:flex;gap:8px;}
+  .addon-card li::before{content:"—";color:var(--crimson-bright);flex-shrink:0;}
+
+  .ratio-strip{display:flex;gap:48px;flex-wrap:wrap;margin-top:36px;padding-top:28px;border-top:1px solid var(--line);}
+  .ratio-strip div b{display:block;font-family:'Archivo Black',sans-serif;font-size:24px;color:var(--paper);}
+  .ratio-strip div span{font-size:12px;color:var(--paper-dim);text-transform:uppercase;letter-spacing:0.05em;}
+
+  /* ZONES */
+  .zones{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);}
+  .zone{background:var(--surface);padding:26px 24px;}
+  .zone h3{font-size:15px;text-transform:none;font-family:'Inter',sans-serif;font-weight:800;margin-bottom:4px;}
+  .zone .fee-tag{display:inline-block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:var(--paper-dim);margin-bottom:14px;}
+  .zone ul{list-style:none;margin-bottom:14px;}
+  .zone ul li{font-size:13px;color:var(--paper-dim);padding:5px 0 5px 16px;position:relative;}
+  .zone ul li::before{content:"";position:absolute;left:0;top:12px;width:6px;height:1px;background:var(--crimson-bright);}
+  .zone p{font-size:13px;color:var(--paper-dim);}
+
+  /* GALLERY */
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+  .gallery a{
+    display:block;aspect-ratio:1;border-radius:2px;overflow:hidden;position:relative;
+  }
+  .gallery img{
+    width:100%;height:100%;object-fit:cover;display:block;
+    transition:transform .4s ease;
+  }
+  .gallery a:hover img{transform:scale(1.06);}
+  @media(max-width:700px){
+    .gallery{grid-template-columns:repeat(2,1fr);}
+  }
+
+  /* CTA / FOOTER */
+  .cta-band{
+    background:var(--crimson);border-top:none;padding:80px 0;text-align:center;
+  }
+  .cta-band h2{font-size:clamp(28px,5vw,46px);margin-bottom:18px;color:#fff;}
+  .cta-band p{color:rgba(255,255,255,0.85);margin-bottom:34px;font-size:16px;}
+  .cta-band .btn-ghost{border-color:rgba(255,255,255,0.5);color:#fff;}
+  .cta-band .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,0.1);}
+  .cta-band .btn-primary{background:var(--ink);}
+  .cta-band .btn-primary:hover{background:#000;}
+
+  footer{padding:88px 0 48px;border-top:1px solid var(--line);}
+  .footer-brand-center{
+    display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:44px;
+  }
+  .footer-logo{width:150px;height:auto;color:var(--paper);}
+  .footer-brand-name{
+    font-family:'Inter',sans-serif;font-weight:700;text-transform:uppercase;
+    letter-spacing:0.24em;font-size:13px;color:var(--paper);margin:8px 0 0;
+  }
+  .footer-tagline{font-size:17px;color:var(--paper-dim);margin:28px 0 0;}
+  .footer-divider{height:1px;background:var(--line);margin-bottom:48px;}
+  .footer-links-row{display:flex;justify-content:center;gap:110px;margin-bottom:48px;text-align:left;}
+  .footer-col h4{
+    font-family:'Playfair Display',serif;font-weight:700;font-size:18px;
+    text-transform:none;letter-spacing:0.01em;color:var(--paper);margin-bottom:20px;
+  }
+  .footer-col a, .footer-col p{
+    display:block;font-size:14px;padding:7px 0;color:var(--paper-dim);line-height:1.5;
+  }
+  .footer-col a{color:var(--paper);opacity:0.8;transition:opacity .2s;}
+  .footer-col a:hover{opacity:1;}
+  @media(max-width:760px){
+    .footer-links-row{flex-direction:column;align-items:center;gap:36px;text-align:center;}
+  }
+  .footer-bottom{border-top:1px solid var(--line);padding-top:24px;font-size:12px;color:var(--paper-dim);text-align:center;}
+  .footer-bottom p{padding:2px 0;}
+
+  .whatsapp-float{
+    position:fixed;bottom:22px;right:22px;z-index:60;background:#25D366;color:#fff;
+    width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+    box-shadow:0 8px 24px rgba(0,0,0,0.4);
+  }
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease, transform .6s ease;}
+  .reveal.in{opacity:1;transform:translateY(0);}
+
+  @media(prefers-reduced-motion:reduce){
+    *{animation-duration:0.01ms !important;transition-duration:0.01ms !important;}
+  }
+
+  /* TERMS PAGE */
+  .page-header{padding:150px 0 50px;text-align:center;}
+  .page-header h1{
+    font-size:clamp(30px,5vw,46px);font-family:'Inter',sans-serif;font-weight:700;color:var(--paper);
+    text-transform:none;letter-spacing:-0.01em;margin-bottom:12px;
+  }
+  .page-header p{color:var(--paper-dim);font-size:15px;max-width:560px;margin:0 auto;}
+  .back-link{
+    display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--paper-dim);
+    text-transform:uppercase;letter-spacing:0.06em;font-weight:600;margin-bottom:20px;
+  }
+  .back-link:hover{color:var(--paper);}
+
+  .rate-table-wrap{overflow-x:auto;border:1px solid var(--line);}
+  table.rate-table{width:100%;border-collapse:collapse;min-width:680px;}
+  .rate-table th{
+    text-align:left;font-family:'Inter',sans-serif;font-size:11px;text-transform:uppercase;
+    letter-spacing:0.06em;color:var(--paper-dim);font-weight:700;padding:16px 18px;
+    border-bottom:1px solid var(--line);background:var(--surface);white-space:nowrap;
+  }
+  .rate-table td{
+    padding:16px 18px;border-bottom:1px solid var(--line);font-size:14px;color:var(--paper-dim);vertical-align:top;
+  }
+  .rate-table tr:last-child td{border-bottom:none;}
+  .rate-table td.region{color:var(--paper);font-weight:700;}
+  .rate-table td.fee{color:var(--paper);font-weight:700;font-family:'Archivo Black',sans-serif;font-size:15px;white-space:nowrap;}
+  .rate-table tr:hover td{background:var(--surface);}
+  .rate-note{font-size:13px;color:var(--paper-dim);margin-top:16px;max-width:640px;}
+
+  .terms-list{display:flex;flex-direction:column;gap:1px;background:var(--line);border:1px solid var(--line);}
+  .terms-item{background:var(--surface);padding:28px 30px;}
+  .terms-item h3{font-size:16px;font-family:'Inter',sans-serif;font-weight:800;text-transform:none;color:var(--paper);margin-bottom:8px;}
+  .terms-item p{font-size:14px;color:var(--paper-dim);line-height:1.6;}
+  .terms-item .deposit-amount{color:var(--paper);font-weight:700;}
+</style>
+</head>
+<body>
+<svg style="display:none" aria-hidden="true">
+  <symbol id="logo-mark" viewBox="0 0 460 220">
+    <!-- plate arc -->
+    <path d="M30,208 Q230,240 430,208" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+    <!-- fork, left -->
+    <g stroke="currentColor" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="14" y1="52" x2="14" y2="96"/>
+      <line x1="28" y1="46" x2="28" y2="96"/>
+      <line x1="42" y1="46" x2="42" y2="96"/>
+      <line x1="56" y1="52" x2="56" y2="96"/>
+      <path d="M10,96 Q35,118 60,96"/>
+      <line x1="35" y1="110" x2="35" y2="196"/>
+    </g>
+    <!-- knife, right -->
+    <g stroke-linecap="round" stroke-linejoin="round">
+      <path d="M408,44 C436,53 436,95 408,104 L395,104 L395,44 Z" fill="currentColor" stroke="none"/>
+      <line x1="401" y1="108" x2="401" y2="196" stroke="currentColor" stroke-width="9" fill="none"/>
+    </g>
+    <!-- cursive wordmark -->
+    <text x="230" y="145" text-anchor="middle" font-family="'Caveat', cursive" font-weight="700" font-size="88" fill="currentColor">Signature</text>
+  </symbol>
+</svg>
+
+<header>
+  <nav>
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 460 220"><use href="#logo-mark"/></svg>
+    </div>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#calculator">Calculator</a>
+      <a href="#packages">Packages</a>
+      <a href="#transport">Transport</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a href="terms.html" style="opacity:1;color:var(--paper);">Terms</a>
+    </div>
+    <a class="btn btn-primary nav-cta" href="https://wa.me/27685805065" target="_blank" rel="noopener">Get a Quote</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#services">Services</a>
+    <a href="#calculator">Calculator</a>
+    <a href="#packages">Packages</a>
+    <a href="#transport">Transport</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+    <a href="terms.html" style="color:var(--paper);">Terms</a>
+    <a href="https://wa.me/27685805065" target="_blank" rel="noopener" style="color:var(--brass-bright);">Get a Quote →</a>
+  </div>
+</header>
+<section class="page-header">
+  <div class="wrap">
+    <a href="index.html" class="back-link">← Back to Site</a>
+    <h1>Terms & Travel Rates</h1>
+    <p>Everything you need to know about booking, deposits and travel fees for your event.</p>
+  </div>
+</section>
+
+<section id="rates" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Pricing</div>
+      <h2>Travel Fee Guide</h2>
+      <p>A flat, upfront travel fee per single vehicle trip, based on your event's location and round-trip distance from our staff hub — no surprises on the day.</p>
+    </div>
+    <div class="rate-table-wrap reveal">
+      <table class="rate-table">
+        <thead>
+          <tr>
+            <th>Region</th>
+            <th>Suburbs Covered</th>
+            <th>Round-Trip Distance</th>
+            <th>Travel Fee</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="region">Local Southern Suburbs</td>
+            <td>Wynberg, Constantia, Plumstead, Claremont, Rondebosch</td>
+            <td>~15 – 20 km</td>
+            <td class="fee">R100</td>
+          </tr>
+          <tr>
+            <td class="region">Deep South</td>
+            <td>Fish Hoek, Simon's Town, Noordhoek, Hout Bay</td>
+            <td>~35 – 40 km</td>
+            <td class="fee">R250</td>
+          </tr>
+          <tr>
+            <td class="region">Cape Town CBD</td>
+            <td>City Bowl, Woodstock, Green Point, Waterfront</td>
+            <td>~42 km</td>
+            <td class="fee">R275</td>
+          </tr>
+          <tr>
+            <td class="region">Atlantic Seaboard</td>
+            <td>Sea Point, Camps Bay, Clifton, Hout Bay</td>
+            <td>~50 – 55 km</td>
+            <td class="fee">R360</td>
+          </tr>
+          <tr>
+            <td class="region">West Coast / Century City</td>
+            <td>Milnerton, Century City, Bloubergstrand, Table View</td>
+            <td>~50 – 65 km</td>
+            <td class="fee">R400</td>
+          </tr>
+          <tr>
+            <td class="region">Northern Suburbs</td>
+            <td>Goodwood, Parow, Bellville, Durbanville</td>
+            <td>~60 – 70 km</td>
+            <td class="fee">R450</td>
+          </tr>
+          <tr>
+            <td class="region">Helderberg Region</td>
+            <td>Somerset West, Strand, Gordons Bay</td>
+            <td>~103 km</td>
+            <td class="fee">R670</td>
+          </tr>
+          <tr>
+            <td class="region">Stellenbosch Winelands</td>
+            <td>Stellenbosch Central, Kuils River, Polkadraai Rd</td>
+            <td>~115 km</td>
+            <td class="fee">R750</td>
+          </tr>
+          <tr>
+            <td class="region">Deep Winelands</td>
+            <td>Paarl, Franschhoek, Wellington</td>
+            <td>~155 – 170 km</td>
+            <td class="fee">R1,050</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="rate-note reveal">Fees shown are the total cost for a single vehicle trip (there and back), not a per-person charge. R100 is the local base minimum. Deep Winelands is treated as long-distance. All travel fees are confirmed upfront and included in your final quote.</p>
+  </div>
+</section>
+
+<section id="terms">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Booking Conditions</div>
+      <h2>Terms & Conditions</h2>
+      <p>The essentials for securing and running your booking smoothly.</p>
+    </div>
+    <div class="terms-list reveal">
+      <div class="terms-item">
+        <h3>Deposit Policy</h3>
+        <p>A non-refundable <span class="deposit-amount">50% deposit</span> is required to secure your staff booking and lock in the date on our calendar.</p>
+      </div>
+      <div class="terms-item">
+        <h3>Balance Payment</h3>
+        <p>The remaining 50% balance must be settled via EFT <span class="deposit-amount">48 hours before</span> the team departs the hub. No staff will leave the hub if the balance is outstanding.</p>
+      </div>
+      <div class="terms-item">
+        <h3>Overtime Clause</h3>
+        <p>If the event runs over the specified 6 hours, additional time is billed at each staff member's normal booked hourly rate <span class="deposit-amount">plus R50 per hour</span>, per staff member, rounded up to the nearest 30 minutes.</p>
+      </div>
+      <div class="terms-item">
+        <h3>Staff Welfare</h3>
+        <p>For shifts exceeding 5 hours, clients are kindly requested to provide staff with basic meals and drinking water.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-brand-center">
+      <svg class="footer-logo" viewBox="0 0 460 220"><use href="#logo-mark"/></svg>
+      <div class="footer-brand-name">Staffing Solutions</div>
+      <p class="footer-tagline sig-font">"Professional staff, when you need it."</p>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-links-row">
+      <div class="footer-col">
+        <h4>Site</h4>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#calculator">Calculator</a>
+        <a href="index.html#packages">Packages</a>
+        <a href="index.html#transport">Transport</a>
+        <a href="index.html#gallery">Gallery</a>
+        <a href="terms.html">Terms</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Call/WhatsApp: <a href="tel:+27685805065" style="display:inline;padding:0;">068 580 5065</a></p>
+        <p>Email: <a href="mailto:ismaeelemm@gmail.com" style="display:inline;padding:0;">ismaeelemm@gmail.com</a></p>
+        <p>Bookings: <a href="mailto:apexstaffingcpt@outlook.com" style="display:inline;padding:0;">apexstaffingcpt@outlook.com</a></p>
+        <p>Service area: Cape Town & Southern Suburbs</p>
+        <p>Owner & Manager: Isma-eel Marthinusen</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Signature Staffing Solutions</p>
+      <p>Cape Town, South Africa</p>
+    </div>
+  </div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/27685805065" target="_blank" rel="noopener" aria-label="Message us on WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.85 9.85 0 0 0 12.04 2zm0 18.06h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.53 3.69-8.22 8.24-8.22 2.2 0 4.27.86 5.83 2.42a8.15 8.15 0 0 1 2.41 5.81c0 4.53-3.69 8.23-8.23 8.23zm4.51-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.46-1.37-1.7-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.24-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.17 0-.43.06-.66.31-.23.25-.86.84-.86 2.05 0 1.21.88 2.38 1 2.54.12.17 1.73 2.64 4.2 3.7.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.11-.23-.17-.48-.29z"/></svg>
+</a>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.remove('open')));
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => io.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('in'));
+  }
+</script>
+
+</body>
+</html>
