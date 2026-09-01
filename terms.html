@@ -321,6 +321,30 @@
   .terms-item h3{font-size:16px;font-family:'Inter',sans-serif;font-weight:800;text-transform:none;color:var(--paper);margin-bottom:8px;}
   .terms-item p{font-size:14px;color:var(--paper-dim);line-height:1.6;}
   .terms-item .deposit-amount{color:var(--paper);font-weight:700;}
+  /* LEGAL TERMS DOCUMENT */
+  .tc-toc{
+    columns:2 220px;column-gap:32px;margin-bottom:8px;
+  }
+  .tc-toc a{
+    display:block;font-size:13px;color:var(--paper-dim);padding:6px 0;break-inside:avoid;
+  }
+  .tc-toc a:hover{color:var(--paper);}
+  .tc-toc a b{color:var(--paper-dim);font-weight:700;margin-right:6px;}
+  .tc-section{max-width:740px;margin-bottom:38px;scroll-margin-top:100px;}
+  .tc-section h3{
+    font-size:15px;font-family:'Inter',sans-serif;font-weight:800;text-transform:none;
+    color:var(--paper);margin-bottom:10px;letter-spacing:0.01em;
+  }
+  .tc-section p{font-size:14.5px;color:var(--paper-dim);line-height:1.7;}
+  .tc-section p + p{margin-top:10px;}
+  .tc-section ul{margin:10px 0 0 20px;}
+  .tc-section li{font-size:14.5px;color:var(--paper-dim);line-height:1.7;margin-bottom:4px;}
+  .tc-contact-card{
+    max-width:420px;background:var(--surface);border:1px solid var(--line);padding:28px 30px;margin-top:8px;
+  }
+  .tc-contact-card p{padding:4px 0;}
+  .tc-contact-card a{color:var(--paper);}
+
 </style>
 </head>
 <body>
@@ -353,40 +377,326 @@
       <svg class="brand-mark" viewBox="0 0 460 220"><use href="#logo-mark"/></svg>
     </div>
     <div class="nav-links">
-      <a href="#services">Services</a>
-      <a href="#calculator">Calculator</a>
-      <a href="#packages">Packages</a>
-      <a href="#transport">Transport</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
-      <a href="terms.html" style="opacity:1;color:var(--paper);">Terms</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#events">Events</a>
+      <a href="index.html#calculator">Calculator</a>
+      <a href="index.html#packages">Packages</a>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="index.html#contact">Contact</a>
     </div>
     <a class="btn btn-primary nav-cta" href="https://wa.me/27685805065" target="_blank" rel="noopener">Get a Quote</a>
     <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
   </nav>
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#services">Services</a>
-    <a href="#calculator">Calculator</a>
-    <a href="#packages">Packages</a>
-    <a href="#transport">Transport</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
+    <a href="index.html#services">Services</a>
+    <a href="index.html#events">Events</a>
+    <a href="index.html#calculator">Calculator</a>
+    <a href="index.html#packages">Packages</a>
+    <a href="index.html#gallery">Gallery</a>
+    <a href="about.html">About</a>
+    <a href="index.html#contact">Contact</a>
     <a href="terms.html" style="color:var(--paper);">Terms</a>
     <a href="https://wa.me/27685805065" target="_blank" rel="noopener" style="color:var(--brass-bright);">Get a Quote →</a>
   </div>
 </header>
 <section class="page-header">
   <div class="wrap">
-    <a href="index.html" class="back-link">← Back to Site</a>
-    <h1>Terms & Travel Rates</h1>
-    <p>Everything you need to know about booking, deposits and travel fees for your event.</p>
+    <a href="index.html" class="back-link">← Back to Website</a>
+    <h1>Terms & Conditions</h1>
+    <p class="sig-font" style="font-size:16px;color:var(--paper-dim);margin-bottom:18px;">"Last updated: 2026"</p>
+    <p>These Terms & Conditions set out the basis on which Signature Staffing Solutions provides event staffing and related services. By confirming a booking, the client agrees to the applicable terms below.</p>
+  </div>
+</section>
+
+
+
+<section id="terms">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Terms & Conditions</div>
+      <h2>The full detail</h2>
+      <p>Written in plain English. If anything here is unclear, contact us before confirming your booking.</p>
+    </div>
+
+    <div class="tc-toc reveal">
+      <a href="#tc-1"><b>01</b>General Terms</a>
+      <a href="#tc-2"><b>02</b>Services</a>
+      <a href="#tc-3"><b>03</b>Events We Service</a>
+      <a href="#tc-4"><b>04</b>Quotations & Pricing</a>
+      <a href="#tc-5"><b>05</b>Booking Confirmation</a>
+      <a href="#tc-6"><b>06</b>Deposits & Payments</a>
+      <a href="#tc-7"><b>07</b>Cancellations & Postponements</a>
+      <a href="#tc-8"><b>08</b>Minimum Booking Period</a>
+      <a href="#tc-9"><b>09</b>Overtime & Extended Hours</a>
+      <a href="#tc-10"><b>10</b>Staffing Numbers</a>
+      <a href="#tc-11"><b>11</b>Staff Roles & Scope of Work</a>
+      <a href="#tc-12"><b>12</b>Client Responsibilities</a>
+      <a href="#tc-13"><b>13</b>Venue Access & Delays</a>
+      <a href="#tc-14"><b>14</b>Setup & Breakdown</a>
+      <a href="#tc-15"><b>15</b>Bar Services & Alcohol</a>
+      <a href="#tc-16"><b>16</b>Client & Staff Conduct</a>
+      <a href="#tc-17"><b>17</b>Health, Safety & Unsafe Conditions</a>
+      <a href="#tc-18"><b>18</b>Transport</a>
+      <a href="#tc-19"><b>19</b>Late-Night Transport Surcharge</a>
+      <a href="#tc-20"><b>20</b>Client-Arranged Transport</a>
+      <a href="#tc-21"><b>21</b>Staff Availability & Replacements</a>
+      <a href="#tc-22"><b>22</b>Equipment & Client Property</a>
+      <a href="#tc-23"><b>23</b>Photographs & Marketing</a>
+      <a href="#tc-24"><b>24</b>Reviews & Testimonials</a>
+      <a href="#tc-25"><b>25</b>Complaints</a>
+      <a href="#tc-26"><b>26</b>Force Majeure</a>
+      <a href="#tc-27"><b>27</b>Liability</a>
+      <a href="#tc-28"><b>28</b>Insurance</a>
+      <a href="#tc-29"><b>29</b>Privacy</a>
+      <a href="#tc-30"><b>30</b>Website Calculator</a>
+      <a href="#tc-31"><b>31</b>Website Content</a>
+      <a href="#tc-32"><b>32</b>Intellectual Property</a>
+      <a href="#tc-33"><b>33</b>Subcontractors / Temporary Staff</a>
+      <a href="#tc-34"><b>34</b>Dispute Resolution</a>
+      <a href="#tc-35"><b>35</b>Governing Law</a>
+      <a href="#tc-36"><b>36</b>Changes to These Terms</a>
+      <a href="#tc-37"><b>37</b>Contact Details</a>
+    </div>
+  </div>
+</section>
+
+<section id="tc-body" style="padding-top:0;">
+  <div class="wrap">
+
+    <div class="tc-section reveal" id="tc-1">
+      <h3>01. General Terms</h3>
+      <p>These Terms & Conditions apply to all services provided by Signature Staffing Solutions ("Signature", "we", "us"). By requesting or booking our services, the client agrees to be bound by these terms.</p>
+      <p>An enquiry or quotation does not, on its own, constitute a confirmed booking. Signature may update these Terms & Conditions from time to time; the version applicable to a booking is the version accepted at the time that booking is confirmed.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-2">
+      <h3>02. Services</h3>
+      <p>Signature provides trained event staff, including:</p>
+      <ul>
+        <li>Waiters</li>
+        <li>Bar staff</li>
+        <li>Runners</li>
+        <li>Hosts / event assistants</li>
+        <li>Setup and breakdown crews</li>
+        <li>Cleaning / scullery staff</li>
+        <li>General event support</li>
+        <li>Tailored staffing solutions built around your requirements</li>
+      </ul>
+      <p>The exact services supplied for any booking are determined by the client's quotation and confirmed booking.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-3">
+      <h3>03. Events We Service</h3>
+      <p>Signature provides staffing for a wide range of occasions, including corporate events, conferences, brand activations and promotional events, weddings and private parties, sporting and stadium events, festivals and wine festivals, gala dinners, cocktail events, and other private or commercial functions. This list is not exhaustive — get in touch if your event isn't listed here.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-4">
+      <h3>04. Quotations & Pricing</h3>
+      <p>Quotes are prepared based on the information supplied by the client at the time of enquiry. Changes to guest numbers, staffing requirements, event duration, location or duties may affect the final price.</p>
+      <p>A quotation does not automatically guarantee staff availability. Transport may be charged separately where applicable, and public holidays, unusual hours, extended hours or special event requirements may attract additional charges. Final pricing is confirmed before a booking is accepted.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-5">
+      <h3>05. Booking Confirmation</h3>
+      <p>An enquiry is not a booking. A quotation is not a booking. A booking is only confirmed once Signature has confirmed it and any required deposit or payment has been received. Staff availability is not guaranteed until a booking is confirmed.</p>
+      <p>Signature may decline or refuse a booking at its discretion where it cannot reasonably fulfil the requirements.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-6">
+      <h3>06. Deposits & Payments</h3>
+      <p>Signature may require a deposit to secure a booking — typically a 50% deposit. The exact deposit amount and payment deadline will be stated on the client's quotation or invoice, and the remaining balance is due according to the agreed payment terms.</p>
+      <p>Late payments may affect Signature's ability to provide the agreed service. Additional services or hours are billed separately, and payment methods will be communicated during the booking process.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-7">
+      <h3>07. Cancellations & Postponements</h3>
+      <p>Client-initiated cancellations, postponements, or changes to the event date should be communicated to Signature as soon as possible. Deposits and payments already made may be subject to the cancellation terms agreed at booking, particularly where the cancellation occurs close to the event date and costs have already been incurred.</p>
+      <p>A postponed event is not automatically treated as a new confirmed booking until the new date has been accepted by Signature. These terms operate subject to applicable South African consumer law.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-8">
+      <h3>08. Minimum Booking Period</h3>
+      <p>The standard minimum booking is 4 hours, unless otherwise agreed. Certain packages or special bookings may carry a different minimum — the confirmed minimum for your booking will be shown on the quotation.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-9">
+      <h3>09. Overtime & Extended Hours</h3>
+      <p>If an event runs beyond the confirmed booking period, additional time is billed at each staff member's normal booked hourly rate plus R50 per hour, per staff member, rounded up to the nearest 30 minutes.</p>
+      <p>Overtime should be agreed with the client where reasonably possible. Clients should not assume staff will remain on-site indefinitely without additional payment being agreed.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-10">
+      <h3>10. Staffing Numbers</h3>
+      <p>Recommended staffing numbers are based on the event details and service style provided. The staffing calculator on our website provides an estimate only and is not a binding quotation — final staffing numbers are determined during the quotation process.</p>
+      <p>Large, complex, high-volume or specialist events may require additional staff, and staffing ratios may differ depending on the nature of the event.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-11">
+      <h3>11. Staff Roles & Scope of Work</h3>
+      <p>Staff are assigned according to the roles booked for an event. Waiters, bar staff, runners, setup crews, cleaners and other roles carry different responsibilities, and staff should not automatically be expected to perform duties outside the agreed scope of their role. Additional duties may require additional staff or attract additional charges.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-12">
+      <h3>12. Client Responsibilities</h3>
+      <p>The client is responsible for providing accurate information regarding:</p>
+      <ul>
+        <li>Event date and time</li>
+        <li>Venue</li>
+        <li>Guest numbers</li>
+        <li>Type of event</li>
+        <li>Service requirements</li>
+        <li>Setup requirements</li>
+        <li>Bar requirements</li>
+        <li>Access times and parking/access arrangements</li>
+        <li>Any unusual conditions or special requirements</li>
+      </ul>
+      <p>Where any of this information changes, the client must notify Signature as soon as reasonably possible.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-13">
+      <h3>13. Venue Access & Delays</h3>
+      <p>Staff must be given reasonable access to the venue at the agreed arrival time. Delays caused by the client, the venue, or circumstances outside Signature's control may affect the service provided, and waiting time or extended hours arising from such delays may attract additional charges where applicable. Setup time must be agreed in advance.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-14">
+      <h3>14. Setup & Breakdown</h3>
+      <p>Setup and breakdown services cover the tasks specifically agreed in the booking. Unless specifically quoted for, staff should not be expected to perform dangerous work, specialist construction, electrical work, heavy or hazardous lifting, technical installations, or any work outside their agreed role.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-15">
+      <h3>15. Bar Services & Alcohol</h3>
+      <p>Signature provides trained bar staff — not necessarily the alcohol itself. Responsibility for supplying alcohol, obtaining any required licensing, and meeting venue requirements remains with the client or venue, unless specifically agreed otherwise.</p>
+      <p>Staff may refuse unsafe, unlawful or inappropriate requests, and should not knowingly serve guests where doing so would create an unreasonable safety or legal concern. Signature does not take responsibility for a client's liquor licence or venue compliance unless specifically contracted to do so.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-16">
+      <h3>16. Client & Staff Conduct</h3>
+      <p>Signature staff must be treated respectfully at all times. Harassment, intimidation, threats, discrimination, violence or abuse toward staff will not be tolerated, and Signature may remove staff from an unsafe situation or terminate services where serious safety or conduct issues arise.</p>
+      <p>Signature staff are, in turn, expected to conduct themselves professionally while representing the company.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-17">
+      <h3>17. Health, Safety & Unsafe Conditions</h3>
+      <p>Signature aims to provide staff with a safe working environment. Clients and venues must disclose any known hazards relevant to the event. Staff may refuse tasks that are reasonably considered dangerous or outside their competence, and Signature may withdraw staff from an unsafe environment. Emergency situations take priority over normal service obligations.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-18">
+      <h3>18. Transport</h3>
+      <p>Transport charges may apply depending on the event location and booking requirements, and will be confirmed as part of the quotation. Staff transport may be arranged by Signature or by the client, as agreed.</p>
+      <p>Multiple vehicles may be required depending on staff numbers, and unusual waiting time or travel requirements may result in additional charges. See our Pricing Reference below for standard regional travel fees.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-19">
+      <h3>19. Late-Night Transport Surcharge</h3>
+      <p>A late-night transport surcharge may apply where Signature is required to provide staff transport after midnight. The applicable surcharge will be confirmed upfront in the quotation, and is based on factors such as the transport requirement, time, distance, number of vehicles and operating circumstances at the time.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-20">
+      <h3>20. Client-Arranged Transport</h3>
+      <p>Clients may arrange their own transport for staff where this is agreed in advance. Any client-arranged transport must be safe and suitable for the number of staff travelling, and Signature may decline transport arrangements that appear unsafe or unsuitable. Where Signature is not providing the transport, Signature's transport surcharge does not apply.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-21">
+      <h3>21. Staff Availability & Replacements</h3>
+      <p>Signature makes reasonable efforts to provide the agreed number of staff for a booking. Individual staff members are not guaranteed unless specifically agreed. If a staff member becomes unavailable, Signature will aim to provide a suitable replacement wherever reasonably possible, in order to maintain the agreed level of service.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-22">
+      <h3>22. Equipment & Client Property</h3>
+      <p>Staff may work with venue or client equipment and property in the course of an event. Clients and venues remain responsible for providing suitable equipment, unless Signature has specifically agreed to supply it. Damage caused by misuse, negligence, or use outside the agreed scope may be dealt with separately.</p>
+      <p>As Signature's services expand to include equipment such as glassware, linen, bar equipment, tables and chairs, further equipment-hire terms will apply to those specific services.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-23">
+      <h3>23. Photographs & Marketing</h3>
+      <p>Signature may request permission to use photographs or video from an event for marketing purposes. Signature does not claim automatic rights to use images of identifiable guests — where appropriate, permission or consent will be sought before using identifiable individuals in marketing material.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-24">
+      <h3>24. Reviews & Testimonials</h3>
+      <p>Reviews submitted through our website should reflect genuine customer experiences. Signature may moderate submitted reviews, and reserves the right to reject or remove reviews containing spam, abuse, hate speech, threats, unlawful content, advertising, or content irrelevant to the review process.</p>
+      <p>Signature may contact a reviewer to verify their review. Approval of a review does not mean Signature agrees with every statement it contains.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-25">
+      <h3>25. Complaints</h3>
+      <p>Clients should contact Signature as soon as reasonably possible if a service issue arises, giving Signature a reasonable opportunity to investigate and resolve the matter. Complaints should include relevant details such as the event date, venue, and nature of the issue. Signature will aim to resolve legitimate complaints fairly and professionally.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-26">
+      <h3>26. Force Majeure</h3>
+      <p>Signature will not be held responsible for delays or failures in service caused by circumstances beyond its reasonable control, including severe weather, natural disasters, major transport disruption, government restrictions, venue closure, serious emergencies, infrastructure failures, and other events beyond reasonable control. This clause does not apply to matters Signature could reasonably have controlled or avoided.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-27">
+      <h3>27. Liability</h3>
+      <p>Signature takes reasonable care in providing its services. Signature may not be responsible for losses caused by circumstances outside its reasonable control, the actions of third parties, unsafe venue conditions, inaccurate information supplied by the client, or matters outside the agreed scope of a booking.</p>
+      <p>Nothing in these Terms is intended to exclude any right or protection that cannot lawfully be excluded under applicable South African law.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-28">
+      <h3>28. Insurance</h3>
+      <p>Clients may request information regarding applicable insurance or coverage where relevant to their event.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-29">
+      <h3>29. Privacy</h3>
+      <p>Personal information supplied during an enquiry or booking may be processed for legitimate business purposes, in accordance with applicable South African privacy laws. A full Privacy Policy is available on request.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-30">
+      <h3>30. Website Calculator</h3>
+      <p>The staffing calculator on our website is an estimate, provided for planning purposes only. It is not a binding quotation. Final staffing recommendations and pricing are confirmed directly by Signature.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-31">
+      <h3>31. Website Content</h3>
+      <p>Information on this website is provided for general information purposes. Prices, availability and service details may change, and while Signature aims to keep this information accurate, website errors do not automatically create a contractual entitlement.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-32">
+      <h3>32. Intellectual Property</h3>
+      <p>The Signature Staffing Solutions name, logo, branding, website design, original text, graphics and marketing materials are the property of Signature Staffing Solutions and may not be copied or reproduced without permission, except where permitted by law.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-33">
+      <h3>33. Subcontractors / Temporary Staff</h3>
+      <p>Signature may use suitable temporary, casual or contracted personnel where appropriate to fulfil a booking. This does not remove any legal obligation Signature may have toward the people who work on its behalf.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-34">
+      <h3>34. Dispute Resolution</h3>
+      <p>In the event of a dispute, the client should first contact Signature to attempt to resolve the matter directly. Both parties are expected to engage reasonably and in good faith. Nothing in these Terms prevents a consumer from exercising any right available to them under South African law.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-35">
+      <h3>35. Governing Law</h3>
+      <p>These Terms & Conditions are governed by the applicable laws of the Republic of South Africa.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-36">
+      <h3>36. Changes to These Terms</h3>
+      <p>Signature may update these Terms & Conditions from time to time. The version applicable to a booking is the version agreed to at the time that booking is confirmed, subject to applicable law.</p>
+    </div>
+
+    <div class="tc-section reveal" id="tc-37">
+      <h3>37. Contact Details</h3>
+      <div class="tc-contact-card">
+        <p style="font-weight:700;color:var(--paper);">Signature Staffing Solutions</p>
+        <p>Bookings: <a href="mailto:signaturestaffingsolutions@hotmail.com">signaturestaffingsolutions@hotmail.com</a></p>
+        <p>Phone / WhatsApp: <a href="tel:+27685805065">068 580 5065</a></p>
+        <p>Service area: Cape Town and surrounding areas</p>
+      </div>
+    </div>
+
   </div>
 </section>
 
 <section id="rates" style="padding-top:0;">
   <div class="wrap">
     <div class="section-head reveal">
-      <div class="eyebrow">Pricing</div>
+      <div class="eyebrow">Pricing Reference</div>
       <h2>Travel Fee Guide</h2>
       <p>A flat, upfront travel fee per single vehicle trip, based on your event's location and round-trip distance from our staff hub — no surprises on the day.</p>
     </div>
@@ -462,34 +772,6 @@
   </div>
 </section>
 
-<section id="terms">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div class="eyebrow">Booking Conditions</div>
-      <h2>Terms & Conditions</h2>
-      <p>The essentials for securing and running your booking smoothly.</p>
-    </div>
-    <div class="terms-list reveal">
-      <div class="terms-item">
-        <h3>Deposit Policy</h3>
-        <p>A non-refundable <span class="deposit-amount">50% deposit</span> is required to secure your staff booking and lock in the date on our calendar.</p>
-      </div>
-      <div class="terms-item">
-        <h3>Balance Payment</h3>
-        <p>The remaining 50% balance must be settled via EFT <span class="deposit-amount">48 hours before</span> the team departs the hub. No staff will leave the hub if the balance is outstanding.</p>
-      </div>
-      <div class="terms-item">
-        <h3>Overtime Clause</h3>
-        <p>If the event runs over the specified 6 hours, additional time is billed at each staff member's normal booked hourly rate <span class="deposit-amount">plus R50 per hour</span>, per staff member, rounded up to the nearest 30 minutes.</p>
-      </div>
-      <div class="terms-item">
-        <h3>Staff Welfare</h3>
-        <p>For shifts exceeding 5 hours, clients are kindly requested to provide staff with basic meals and drinking water.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <footer>
   <div class="wrap">
     <div class="footer-brand-center">
@@ -502,18 +784,18 @@
       <div class="footer-col">
         <h4>Site</h4>
         <a href="index.html#services">Services</a>
+        <a href="index.html#events">Events</a>
         <a href="index.html#calculator">Calculator</a>
         <a href="index.html#packages">Packages</a>
-        <a href="index.html#transport">Transport</a>
         <a href="index.html#gallery">Gallery</a>
-        <a href="terms.html">Terms</a>
+        <a href="index.html#reviews">Reviews</a>
+        <a href="about.html">About</a>
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
         <p>Call/WhatsApp: <a href="tel:+27685805065" style="display:inline;padding:0;">068 580 5065</a></p>
-        <p>Email: <a href="mailto:ismaeelemm@gmail.com" style="display:inline;padding:0;">ismaeelemm@gmail.com</a></p>
-        <p>Bookings: <a href="mailto:apexstaffingcpt@outlook.com" style="display:inline;padding:0;">apexstaffingcpt@outlook.com</a></p>
-        <p>Service area: Cape Town & Southern Suburbs</p>
+        <p>Bookings: <a href="mailto:signaturestaffingsolutions@hotmail.com" style="display:inline;padding:0;">signaturestaffingsolutions@hotmail.com</a></p>
+        <p>Service area: Cape Town & surrounding areas</p>
         <p>Owner & Manager: Isma-eel Marthinusen</p>
       </div>
     </div>
